@@ -46,8 +46,7 @@ to.
 
 📝 **Look at actualLRPS**
 
-1. Grab the guid for appA. You'll need it in a moment. Let's call it
-   APP_A_GUID.
+1. Grab the guid for appA. You'll need it in a moment. Let's call it APP_A_GUID.
    {% include codeHeader.html %}
    ```bash
    cf app appA --guid
