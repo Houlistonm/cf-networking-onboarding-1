@@ -66,7 +66,6 @@ with ingress traffic, which is represented by the orange line.
 
 3. Ssh onto the Diego Cell where your app is running and become root.
 4. Run
-   {% include codeHeader.html %}
    ```
    iptables -S -t nat`
    ```

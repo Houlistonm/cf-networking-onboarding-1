@@ -47,20 +47,17 @@ to.
 📝 **Look at actualLRPS**
 
 1. Grab the guid for appA. You'll need it in a moment. Let's call it APP_A_GUID.
-   {% include codeHeader.html %}
    ```bash
    cf app appA --guid
    ```
 1. Ssh onto the Diego Cell vm where appA is running and become root. You can
    find where appA is running by running the following command:
-   {% include codeHeader.html %}
    ```bash
    cf curl /v2/apps/<app-guid>/stats
    ```
 1. Use the [cfdot CLI](https://github.com/cloudfoundry/cfdot) to query BBS for
    actualLRPs. Cfdot is a helpful CLI for using the BBS API.  It's a great tool
    for debugging on the Diego Cell.
-   {% include codeHeader.html %}
    ```bash
    cfdot actual-lrps | jq .
    ```

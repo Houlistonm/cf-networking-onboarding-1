@@ -39,12 +39,10 @@ Let's take a look at that route table.
 📝 **look at route table**
 1. Bosh ssh onto the router vm and become root.
 1. Get the username and password for the routing api
-   {% include codeHeader.html %}
    ```bash
    head /var/vcap/jobs/gorouter/config/gorouter.yml
    ```
 1. Get the routes table
-   {% include codeHeader.html %}
    ```bash
    curl -s -S "http://USERNAME:PASSWORD@localhost:8080/routes" | jq .
    ```

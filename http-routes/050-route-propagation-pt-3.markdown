@@ -47,7 +47,6 @@ technique.
 📝 **subscribe to NATs messages**
 1. Bosh ssh onto the Diego Cell where your app is running and become root
 1. Get the NATS cli
-   {% include codeHeader.html %}
     ```bash
     wget https://github.com/nats-io/natscli/releases/download/v0.0.32/nats-0.0.32-linux-amd64.zip
     unzip nats-0.0.32-linux-amd64.zip
@@ -56,7 +55,6 @@ technique.
 
     ```
 1. Get NATS username, password, and server address
-   {% include codeHeader.html %}
     ```bash
     jq . /var/vcap/jobs/route_emitter/config/route_emitter.json | grep nats
     ```
