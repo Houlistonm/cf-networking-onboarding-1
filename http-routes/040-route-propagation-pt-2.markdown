@@ -61,7 +61,7 @@ to.
    ```bash
    cfdot actual-lrps | jq .
    ```
-   Returns:
+   Returns multiple records similar to this example:
    ```json
    {
      "process_guid": "5215a757-4f16-42c2-bbc5-610834372938-6ecb7b0c-e87b-474b-9767-770a7bdf2913",
